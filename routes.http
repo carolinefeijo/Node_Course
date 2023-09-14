@@ -1,0 +1,32 @@
+# CRIAR VIDEO
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+      "title": "Video node",
+      "description": "Esse é o primeiro video",
+      "duration": 180
+}
+
+###
+
+# LISTAR TODOS VIDEOS 
+GET http://localhost:3333/videos?search=node
+
+###
+
+# ATUALIZAR POR ID
+PUT  http://localhost:3333/videos/2aef9176-0fa7-4c7b-8504-ce9a528ea5c7
+Content-Type: application/json
+
+{
+      "title": "Video 02",
+      "description": "02 é o segundo video",
+      "duration": 180
+}
+
+###
+
+
+# DELETAR POR ID
+DELETE  http://localhost:3333/videos/2aef9176-0fa7-4c7b-8504-ce9a528ea5c7
